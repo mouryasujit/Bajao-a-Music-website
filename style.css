@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("alexander-shatov-qt7S2QuAhJI-unsplash.jpg");
+    background-repeat: no-repeat; 
+    object-fit: contain;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: white;
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* ###########################################################utility classes################################### */
+.text-light{
+    color:#fff;
+}
+span{
+    color:black;
+}
+.text-weight{
+font-weight: 500;
+}
+li{
+list-style: none;
+padding: 12px ;
+}
+.text-colour{
+    color: red;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-weight: 400;
+}
+.container{
+max-width: 1000px;
+width: 90%;
+margin: auto;
+}
+a:hover{
+    cursor: pointer;
+    color: greenyellow;
+    transition: 1s ;
+}
+.logo img{
+     width: 70px;
+  
+    border-radius: 20%;
+    padding: 5px;
+}
+.logo{
+    display: flex;
+    align-items:center;
+    font-weight: 500;
+    padding: 6px;
+    
+}
+.lii-container{
+    display: flex;
+    flex-direction: row;
+}
+.li-container{
+    display: flex;
+    height: 65px;
+    width: 100%;
+    font-size: 1.3rem;
+    background-color:black;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+}
+/* ###############################################between section styling################################### */
+.bottom{
+    position:sticky;
+    position: relative;
+    height: 120px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    bottom: 0%;
+}
+.icons:hover{
+    cursor: pointer;
+}
+
+.icons i{
+    padding: 5px;
+}
+.container-wallpaper{
+    min-height: 72vh;
+    background-color: black;
+    margin: 0.5rem;
+    box-shadow:0 0 30px 12px rgba(128, 128, 128, 0.411);
+    border-radius: 20px;
+}
+#duration_slider{
+    width: 90%;
+    cursor: pointer;
+}
+.song-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('song-list.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 20px;
+}
+.song-items img{
+  width: 100px;
+  margin: 0 23px;
+  height: 75px;
+  
+  border-radius: 50%;  
+}
+.song-items{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color:snow;
+    width: 40%;
+    padding: 1rem;
+    color: black;
+    margin: 12px 2rem;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 12px rgba(0, 0, 0, 0.486);
+}
+.song-items:hover{
+    background-color:greenyellow;
+}
+.time-stamp{
+   padding: 1rem;
+       
+}
+.time-stamp i{
+    cursor: pointer;
+}
+.song-info img{
+    position:absolute;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    top:20%;
+    left: 5%;
+    height: 70px;
+    width: 100px;
+    border-radius: 50%;
+}
+.info{
+    color:white;
+    position:absolute;
+    top: 45%;
+    left: 15%;
+}
+.song-items span{
+    font-size: 25px;
+    font-weight: 500;
+}
+#duration_slider{
+    transition: 0.2s ease-in-out;
+}
+
+.topnav #myLinks{
+    display: none;
+} 
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  
+  .topnav a.icon {
+    background: black;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+   
+  .topnav a:hover {
+    
+    color: #fff;
+  }
+  
+   
+  .active {
+    background-color: #04AA6D;
+     
+  }
+@media(max-width:768px){
+    body{
+        font-size: 10px;
+        height: 100vh;
+    }
+    .nav-container .lii-container li a{
+         display: none;
+    }
+    .topnav a.icon {
+        display: block;
+    }
+    .topnav .icon .fa{
+        display: block;
+        color: white;    
+    }
+    .song-items{
+        width: 95%;
+        height: fit-content;
+        text-align: center;
+    }
+    .container{
+        height: 80vh;
+    }
+    .container .container-wallpaper{
+        height: 80vh;
+        overflow:scroll;
+    }  
+    .song-info .info{
+         display: none;
+    }  
+    .song-info #gif{
+        display: block;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 45%;
+        left: 10%;
+    }
+}

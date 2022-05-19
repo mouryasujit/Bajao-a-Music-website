@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajao-About-us</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <Style>
+        body {
+            background-image: url("about.jpg");
+            background-size: cover;
+
+        }
+
+        .nav-container .li-container {
+            background-color: rgba(0, 0, 0, 0.421);
+        }
+
+        .photo {
+            position: relative;
+        }
+
+        .photo img {
+            height: 200px;
+            width: 200px;
+            border: 3px solid red;
+            border-radius: 60%;
+        }
+
+        .information {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .photo span {
+            font-size: 32px;
+            font-weight: bold;
+            position: absolute;
+            top: 100%;
+            left: 35%;
+            margin-bottom: 2rem;
+        }
+
+        .my-work {
+            display: flex;
+            line-height: 2rem;
+            bottom: 2rem;
+            margin: 2rem;
+        }
+
+        .my-work div {
+            display: block;
+            text-align: center;
+        }
+
+        .my-work li {
+            border: 2px solid red;
+            margin: 0.3rem;
+        }
+
+        .my-work li:hover {
+            box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: 0.5s ease-in-out;
+        }
+        .other-info{
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            line-height: 4rem;
+            font-size: 1.5rem;
+        }
+        .other-info .study{
+            display: block;
+             
+            color: white;
+        }
+       
+        .email a{
+            display: block;
+            color: red;
+          
+        }
+        .other-info span{
+            color: red;
+        }
+        .mob{
+            display: block;
+            
+            color: greenyellow;
+        }
+        @media(max-width:768px){
+            body{
+                font-size: 10px;
+                
+            }
+            .photo img{
+                height: 6rem;
+                width: 6rem;
+            }
+            .photo span{
+                left: 25%;
+                top:100%;
+                font-size: 1.2rem;
+                
+            }
+            .my-work{
+                flex-direction: column;
+                font-size: 1rem;
+            }
+            .contact-me{
+                font-size: 0.7rem;
+            }
+            .container{
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+            .other-info{
+                flex-direction: column;
+                font-size: 1.5rem;
+            }
+            .top-nav a.icon{
+                display: block;
+                color: #fff;
+                background-color: rgba(255, 255, 255, 0.205);
+            }
+        }
+
+    </Style>
+</head>
+
+<body>
+    <div class="topnav">
+        
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+            <i class="fa fa-2x text-light fa-bars"></i></a> 
+        <div id="myLinks">
+          <a href="index.html" class="active"></a>
+          <a href="index.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="about-us.html">About us</a>
+          <a href="premium.html">Get Premium</a>
+        </div>
+       
+    </div>
+    <nav class="nav-container">
+        <ul class="li-container">
+            <div>
+                <li class="logo"><img src="alexander-shatov-qt7S2QuAhJI-unsplash.jpg" alt="">Bajao</li>
+            </div>
+            <div class="lii-container">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="premium.html">Premium</a></li>
+            </div>
+
+        </ul>
+    </nav>
+    <div class="container">
+
+        <div class="information">
+            <div class="photo">
+                <img src="my photo.jpeg" alt=""><span>SujitKumar Mourya</span>
+            </div>
+        </div>
+        <div class="contact-me"><br>
+            <h1>We will provide you the best service</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio magnam, inventore, corrupti numquam quidem
+                voluptatem nemo, eveniet laboriosam doloremque qui mollitia ducimus eaque. Suscipit ab ad atque ducimus
+                doloribus quam quaerat asperiores? Doloribus voluptatem, quae debitis perferendis sunt possimus,
+                repudiandae eius quod facilis nemo temporibus ea provident quasi soluta neque.</p>
+        </div>
+        <div class="my-work">
+            <div>
+                <h2>My github Page : <a href="https://github.com/mouryasujit" target="_blank">mouryasujit</a></h2>
+            </div>
+            <li><a href="https://github.com/mouryasujit/project-" target="_blank">Restaurent Project</a></li>
+            <li><a href="https://github.com/mouryasujit/My-first-project-" target="_blank">Travel Website Project</a></li>
+            <li><a href="https://github.com/mouryasujit/javascript-projects" target="_blank">javascript-projects</a></li>
+            <li><a href="https://github.com/mouryasujit/javascript-projects-midium" target="_blank">javascript-projects-midium level
+                    projects</a></li>
+        </div>
+        <div class="other-info">
+            <div class="email"><a href="Email" > mouryasujit04@gmail.com <span>|</span></a></div>
+            <div class="study">Web developer, Graphic Designer <span>|</span></div>
+            <span class="mob">Mob-9920224575</span>
+        </div>
+
+    </div>
+    <script src="bajao.js"></script>
+</body>
+
+</html>

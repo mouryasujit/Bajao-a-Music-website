@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajao!!-Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        li {
+            list-style-type:disc ;
+        }
+
+        .container {
+            height: 85vh;
+            max-width: 1300px;
+            border: 3px solid red;
+            position: relative;
+            border-radius: 20px;
+            margin-left: 6.5rem;
+            animation: slider 70s infinite linear;
+            background-repeat: no-repeat;
+            background-size: 100%, 100%;
+            margin-bottom: 2rem;
+        }
+
+        @keyframes slider {
+            0% {
+                background-image: url("hearnodes.jpg");
+            }
+
+            28% {
+                background-image: url("song-list.jpg");
+            }
+
+            46% {
+                background-image: url("softimg.jpg");
+            }
+
+            54% {
+                background-image: url("music.jpg");
+            }
+
+            72% {
+                background-image: url("felltone.jpg");
+            }
+
+            100% {
+                background-image: url("Enjoy.jpg");
+            }
+        }
+
+        
+
+        h1 {
+            transform: translate(150%);
+            animation: h12 2s ease-out forwards;
+        }
+
+        @keyframes h12 {
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .container img {
+            position: absolute;
+            height: 90%;
+            width: 99%;
+            padding: 0.3rem;
+            z-index: 2;
+            text-align: center;
+            box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0);
+            border-radius: 20px;
+            margin-left: 0.5rem;
+            margin-bottom: 0.3rem;
+
+        }
+        .container .img1 span {
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translate(-200%);
+            animation: img1s 2s ease-out forwards;
+        }
+
+        @keyframes img1s {
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .container .img2 span {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translate(200%);
+            animation: img1s 4s ease-out forwards;
+        }
+
+        .container .img3 span {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translate(-300%);
+            animation: img1s 4s ease-out forwards;
+        }
+
+        .container .img4 span {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translate(300%);
+            animation: img1s 6s ease-out forwards;
+        }
+
+        .container .img5 span {
+            position: absolute;
+            top: 60%;
+            left: 30%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translate(-400%);
+            animation: img1s 6s ease-out forwards;
+        }
+
+        .container .img6 span {
+            position: absolute;
+            top: 70%;
+            left: 30%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translate(400%);
+            animation: img1s 8s ease-out forwards;
+        }
+
+        .img ul .info {
+            background-color: rgba(0, 0, 0, 0.342);
+            padding: 0.5rem;
+            width: 40%;
+            margin: 2rem;
+            border-radius: 20px;
+        }
+
+        .container h2 {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.405);
+            text-align: center;
+            padding: 0.3rem;
+            border-radius: 20px;
+        }
+         .btn{
+             text-align: center;
+            margin:1rem;
+         }
+         .btn button{
+            font-size: 2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            border:2px solid red;
+         }
+         button a{
+             color: red;
+             font-size: 2rem;
+         }
+         @media(max-width:768px){
+             body{
+                 font-size: 10px;
+                 width: 50vh;
+               text-align: center;
+                background-image: none;
+                background-color: black;
+                overflow: hidden hidden;
+                  
+             }
+             .nav-container{
+                 width: 100%;
+             }
+            .container{
+                 width: 80%;
+                 height: 70vh;
+                top: 3%;
+                left:5%;
+                overflow: hidden;
+                margin: 1rem 0.3rem;
+                background-size: cover;
+             }
+              .btn{
+                  margin: 3rem 0;
+              }
+             .topnav  {  
+                 display: none;
+             }
+             .container .img ul span{
+               height: 50%; 
+               width: 90%;
+               font-size:3rem;
+                overflow: hidden;
+                line-height: 5rem;
+                  
+             }
+             .container .img1 span {
+            position: absolute;
+            top: 10%;
+            left: -3%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translateY(-200%);
+            animation: img1s 3s  ease-out alternate;
+        }
+
+        @keyframes img1s {
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .container .img2 span {
+            position: absolute;
+            top: 10%;
+            left: -3%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translateY(400%);
+       
+            animation: img1s 10s ease-out ;
+        }
+
+        .container .img3 span {
+            position: absolute;
+            top: 10%;
+            left: -3%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translateY(-600%);
+            animation-delay: 3s;
+            animation: img1s 15s ease-out ;
+        }
+
+        .container .img4 span {
+            position: absolute;
+            top: 10%;
+            left: -3%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translateY(1200%);
+            
+            animation: img1s 25s ease-out ;
+        }
+
+        .container .img5 span {
+            position: absolute;
+            top: 10%;
+            left: -3%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translateY(-2000%);
+      
+            animation: img1s 35s ease-out ;
+        }
+
+        .container .img6 span {
+            position: absolute;
+            top: 10%;
+            left: -3%;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            transform: translateY(2500%);
+            animation: img1s 45s ease-out ;
+        }
+         }
+    </style>
+
+</head>
+
+<body>
+    
+    <nav class="nav-container">
+        <ul class="li-container">
+            <div>
+                <li class="logo"><img src="alexander-shatov-qt7S2QuAhJI-unsplash.jpg" alt="">Bajao</li>
+            </div>
+            <div class="lii-container">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="premium.html">Premium</a></li>
+            </div>
+
+        </ul>
+    </nav>
+    <h1>Premium Page</h1>
+    <div class="container">
+        <h2>Features</h2>
+        <div class="img img1">
+            <ul>
+
+                <span class="info">&#10147; Superior Quality Music </span>
+            </ul>
+        </div>
+        <div class="img img2">
+            <ul>
+
+                <span class="info">&#10147; Thousands of songs</span>
+            </ul>
+        </div>
+        <div class="img img3">
+            <ul>
+
+                <span class="info">&#10147; Hear Sooting Music</span>
+            </ul>
+        </div>
+        <div class="img img4">
+            <ul>
+
+                <span class="info">&#10147; Hear all kind of Music </span>
+            </ul>
+        </div>
+        <div class="img img5">
+            <ul>
+
+                <span class="info">&#10147; Catch all the new song <span>
+            </ul>
+        </div>
+        <div class="img img6">
+            <ul>
+
+                <span class="info">&#10147; Enjoy Add free Music</span>
+            </ul>
+        </div>
+
+
+    </div>
+    <div class="btn">
+
+        <button ><a href="login.html"id="button" onclick="message()"> Premium</a></button>
+    </div>
+</body>
+
+<script src="bajao.js"></script>
+<script>
+    function message(){
+        alert("Now You are a premium Member Enjoy!!!");
+    }
+</script>
+</html>
